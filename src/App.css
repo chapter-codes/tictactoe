@@ -1,0 +1,97 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 1rem;
+}
+
+.name{
+	font-weight: bold;
+	text-align: center;
+	padding-top: 3rem ;
+	padding-bottom: 2rem;
+	font-size: 1.2rem;
+	color:orangered
+}
+.App > div >h1{
+	text-align: center;
+	padding: 1rem;
+}
+.container{
+	display: flex;
+	padding-top:2rem ;
+	justify-content: space-evenly;
+	gap: ;
+
+}
+.tictactoe{
+	text-align: center;
+	/* display: flex;
+	flex-direction: column; */
+}
+.tictactoe > div{
+	margin:  1rem;
+}
+.row{
+	display: flex;
+	justify-content: center;
+	gap: 2px;
+	margin-bottom: 2px;
+}
+.row >div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	border: 1px solid ;
+	font-weight: bolder;
+	font-size: 2rem;
+
+}
+.row > div:first-of-type, .row >div:last-of-type{
+		/* border-left: none;
+		border-bottom: none; */
+}
+
+.row > div:hover{
+	background-color: orange;
+	color: white;
+}
+
+.tictactoe button{
+	display: block;
+	margin: 2rem auto;
+	padding: .5rem 1rem;
+}
+
+.history{
+	display: flex;
+	align-self: start;
+	flex-direction: column;
+	justify-content: center;
+	/* flex-grow: 1; */
+}
+.history h1{
+	padding-bottom: 1rem;
+	text-align: right;
+	font-weight: bold;
+}
+.history button{
+	display: block;
+	text-align: left;
+	border: 2px solid orange;
+	margin-bottom: 5px;
+	padding:0 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	
+}
+
+button:disabled{
+	color: grey;
+	border-color: grey;
+}
